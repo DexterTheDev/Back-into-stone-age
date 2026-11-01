@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: realm-forge-review
+expected_outcome: |
+  Finds that the purpose itself fails: no specific player, no single experience, uncheckable
+  success, and scope far beyond one person. Uncovers the creator's real reason through the
+  interview and judges against it, giving an Off path verdict with a much smaller plan.
+context:
+  scaffold_script: place-files.sh

@@ -1,0 +1,10 @@
+export * from './world/constants.ts';
+export * from './data/items.ts';
+export * from './data/props.ts';
+export * from './data/species.ts';
+export * from './data/story.ts';
+export * from './net/protocol.ts';
+export * from './sim/time.ts';
+export * from './sim/movement.ts';
+export * from './sim/world.ts';
+export { GameSim, ITEM_INDEX, type Outbound, type SimPlayer, type SimFire } from './sim/GameSim.ts';

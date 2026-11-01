@@ -1,0 +1,14 @@
+{
+  "eval_name": "hearth-and-clay-review",
+  "prompt": "so i've been working on my pottery game hearth & clay for about 8 months now, mostly evenings. project's in the folder below. something's felt off lately and i can't put my finger on it. can you dig through it and tell me if i'm still making the right game?",
+  "assertions": [
+    "The first reply asks the creator at least one question and does not give a final judgment on whether the game is on the right path",
+    "At least one question cites a specific file, doc line, or number from the project",
+    "The review shows with named files or numbers that combat work far outweighs the wheel, village, and stories",
+    "The review flags the rent timer or game over screen as breaking the Gentle pillar's rule of no fail states and no timers",
+    "The review links the move to combat with Dana's 'boring' reaction or the unsolved wheel, treating avoidance of the wheel as the likely cause rather than only calling it scope creep",
+    "The final judgment clearly says the project has drifted from or left its purpose",
+    "The final judgment uses a fact that only the creator's answers provide, such as nobody from the target group having played or the creator avoiding the wheel",
+    "The next moves include fixing the wheel first and a test with players from the target group of adults winding down after work"
+  ]
+}

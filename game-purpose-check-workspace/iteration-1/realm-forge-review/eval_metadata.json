@@ -1,0 +1,13 @@
+{
+  "eval_name": "realm-forge-review",
+  "prompt": "hey, this is my first game, realm forge. been at it about 3 months, design doc and unity project are in the folder below. is this on the right track? want to get it out in about 6 months",
+  "assertions": [
+    "The first reply asks the creator at least one question and does not give a final judgment on whether the game is on the right track",
+    "A question asks why the creator is making this game, or asks about the job note in notes.txt",
+    "The review says the purpose itself is weak, calling out at least two of: 'everyone' as the player, the mix of other games as the experience, and 'the next Minecraft' as the success measure",
+    "The review states that only walking and a pickup work and that most scripts are stubs",
+    "The final judgment clearly says the current plan is not on the right track",
+    "The final judgment treats getting hired or a portfolio as the goal and recommends a small finished game on that basis",
+    "The next moves fit the creator's limits of about 8 hours a week and no art budget, including dropping multiplayer"
+  ]
+}

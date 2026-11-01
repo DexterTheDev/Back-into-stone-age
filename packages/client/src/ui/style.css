@@ -1,0 +1,9 @@
+:root { --ink: #e9e1cf; --dim: #a59c88; --blood: #8d1c13; --panel: rgba(12, 11, 9, 0.82); --line: rgba(233, 225, 207, 0.16); }
+* { box-sizing: border-box; }
+html, body { font-family: 'American Typewriter', 'Courier Prime', 'Courier New', monospace; color: var(--ink); -webkit-font-smoothing: antialiased; }
+canvas.game { position: fixed; inset: 0; width: 100vw; height: 100vh; display: block; background: #000; }
+button { font: inherit; color: var(--ink); background: transparent; border: 1px solid var(--line); padding: 10px 16px; cursor: pointer; letter-spacing: 0.04em; }
+button:hover:not(:disabled) { background: rgba(233, 225, 207, 0.1); border-color: rgba(233, 225, 207, 0.4); }
+button:disabled { opacity: 0.35; cursor: default; }
+input, select { font: inherit; color: var(--ink); background: rgba(0,0,0,0.4); border: 1px solid var(--line); padding: 9px 11px; }
+.overlay { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; z-index: 10; }

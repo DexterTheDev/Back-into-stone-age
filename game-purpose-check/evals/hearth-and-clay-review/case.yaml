@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: hearth-and-clay-review
+expected_outcome: |
+  Identifies that combat work has overtaken the wheel and stories, that fail states break the
+  Gentle pillar, and that the unsolved wheel is the likely cause. Interviews the creator before
+  concluding, then gives a Drifting or Off path verdict with concrete next moves.
+context:
+  scaffold_script: place-files.sh

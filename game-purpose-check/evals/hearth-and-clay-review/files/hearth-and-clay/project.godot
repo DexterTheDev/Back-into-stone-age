@@ -1,0 +1,10 @@
+config_version=5
+
+[application]
+config/name="Hearth & Clay"
+run/main_scene="res://scenes/dungeon/floor_01.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
+
+[autoload]
+GameState="*res://scripts/core/game_state.gd"
+RentTimer="*res://scripts/core/rent_timer.gd"

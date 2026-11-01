@@ -1,0 +1,7 @@
+schema_version: "1.1"
+name: fraction-kitchen-review
+expected_outcome: |
+  Recognizes a healthy project: pilot results meet the success criteria and the large teacher
+  dashboard is justified by the purpose. Gives an On path verdict without inventing drift.
+context:
+  scaffold_script: place-files.sh

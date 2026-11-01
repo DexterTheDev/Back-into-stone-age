@@ -1,0 +1,28 @@
+{
+  "name": "dino-horror",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "tools"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @dino/client",
+    "server": "npm run dev -w @dino/server",
+    "build": "npm run build -w @dino/client",
+    "test": "vitest run",
+    "typecheck": "tsc -p packages/shared --noEmit && tsc -p packages/server --noEmit && tsc -p packages/client --noEmit",
+    "assets:fetch": "node tools/fetch-assets.mjs && node tools/fetch-audio.mjs",
+    "bake:world": "tsx tools/bake/world.ts && tsx tools/bake/nav.ts && tsx tools/bake/world.ts valley && tsx tools/bake/nav.ts valley && tsx tools/bake/world.ts ridge && tsx tools/bake/nav.ts ridge",
+    "bake:assets": "tsx tools/bake/textures.ts && tsx tools/bake/models.ts && tsx tools/bake/trees.ts && tsx tools/bake/people.ts",
+    "bake:dinos": "tsx tools/bake/dino/species-trex.ts && tsx tools/bake/dino/species-raptor.ts && tsx tools/bake/dino/species-herbivores.ts",
+    "bake": "npm run bake:world && npm run bake:assets && npm run bake:dinos",
+    "docs:assets": "node tools/write-asset-licenses.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.5",
+    "tsx": "*"
+  }
+}

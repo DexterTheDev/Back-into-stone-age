@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3]
+
+[node name="GameOver" type="Control"]
+
+[node name="Reason" type="Label" parent="."]
+
+[node name="Retry" type="Button" parent="."]

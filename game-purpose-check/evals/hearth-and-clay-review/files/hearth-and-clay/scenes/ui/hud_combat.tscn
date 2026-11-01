@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3]
+
+[node name="CombatHud" type="Control"]
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+
+[node name="StaminaBar" type="ProgressBar" parent="."]

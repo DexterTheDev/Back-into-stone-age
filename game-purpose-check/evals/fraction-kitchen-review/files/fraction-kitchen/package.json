@@ -1,0 +1,8 @@
+{
+  "name": "fraction-kitchen",
+  "version": "0.6.0",
+  "private": true,
+  "scripts": { "dev": "vite", "build": "vite build", "test": "vitest run" },
+  "dependencies": { "phaser": "3.80.1" },
+  "devDependencies": { "typescript": "5.5.4", "vite": "5.4.2", "vitest": "2.0.5" }
+}

@@ -1,0 +1,12 @@
+node_modules
+dist
+.DS_Store
+*.log
+.cache/
+tools/.raw/
+packages/server/saves/
+tools/generated/*
+!tools/generated/polyhaven-manifest.json
+!tools/generated/freesound-manifest.json
+promo/Dino-Horror-Promo.mp4
+tools/
