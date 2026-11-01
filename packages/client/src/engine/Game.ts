@@ -139,7 +139,7 @@ export class Game {
     const { mode, name, character } = this.opts;
     let link: WorkerLink | SocketLink;
     if (mode === 'solo') link = new WorkerLink(name, character, this.opts.save);
-    else link = new SocketLink(this.opts.server ?? `ws://${location.hostname}:8787`, mode === 'join' ? (this.opts.code ?? '') : null, name, character, this.opts.save);
+    else link = new SocketLink(this.opts.server ?? (location.hostname.endsWith('perspectivepharos.online') ? 'wss://server.perspectivepharos.online' : `ws://${location.hostname}:8787`), mode === 'join' ? (this.opts.code ?? '') : null, name, character, this.opts.save);
     this.link = link;
     link.onEvent = (e) => this.onEvent(e);
     link.onSnapshot = (s) => this.onSnapshot(s);

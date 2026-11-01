@@ -16,7 +16,7 @@ const CHARS = [
   { name: 'Marcus Hale', role: 'Army medic. Treats wounds.' },
   { name: 'Tomás Reyes', role: 'Guide. Reads tracks, moves quietly.' },
 ];
-const f = reactive({ name: read('dh.name', 'Survivor'), character: Number(read('dh.char', '0')), code: '', server: read('dh.server', `ws://${location.hostname}:8787`), preset: read('dh.preset', 'medium'), gore: read('dh.gore', '1') === '1', photosensitive: read('dh.photo', '0') === '1', tips: read('dh.tips', '1') === '1' });
+const f = reactive({ name: read('dh.name', 'Survivor'), character: Number(read('dh.char', '0')), code: '', server: read('dh.server', (location.hostname.endsWith('perspectivepharos.online') ? 'wss://server.perspectivepharos.online' : `ws://${location.hostname}:8787`)), preset: read('dh.preset', 'medium'), gore: read('dh.gore', '1') === '1', photosensitive: read('dh.photo', '0') === '1', tips: read('dh.tips', '1') === '1' });
 const help = ref<'' | 'play' | 'controls'>('');
 // Plain data, not reactive: it is posted to the simulation worker as it stands.
 const save = shallowRef<SaveData | null>((() => { try { return JSON.parse(read('dh.save', 'null')) as SaveData | null; } catch { return null; } })());
